@@ -23,5 +23,5 @@
 	
 	Show the plot of frequency of "Trump" in live twitters. 
 	
-	![alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Streaming%20Data%20from%20Twitter/images/TrumpFrequency.png " Frequency of Trump")
+	[alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Streaming%20Data%20from%20Twitter/images/TrumpFrequency.png " Frequency of Trump")
 	
