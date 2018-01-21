@@ -26,3 +26,20 @@ Before getting started, you will need to download the dataset and the starter iP
 - Download the wikipedia dataset with articles on famous people here in SFrame format: **[people_wiki.gl.zip](https://eventing.coursera.org/api/redirectStrict/GKsSRrYkoeGfc5XjAKr6ncJ3J2ubnIm999yQqv35HDem2Ta9G7KHR0vHwNYFo0f-Z6Vmdknu3Zu3bUKLjLaN0g.dQ7WrvOu097_hXA-L_GwEQ.jyciXHStsYv3slLocnd8PMgNlMfQWxmgbAG7CjqHwZynJhmlBupunsBPgk-m9M5gtckqHwtnp2xIuaeanrjL3wCNfhycxlTM4wSZ4paOra3d-e2T9AYkf1jHWbcm07PeSsoRpDGFCc2sMLE12rGGiGh8lb5VTCsXWLhrOlxJI-y2A5xRb_TfJIyNsYFZLqGohOxhZfZ4cTuQUcWVYNkUyfXoza0Sfy4Oh8uN56yKkyggBgWBvh75PKH_OQQBYQr_hq-Ktl_KHyfJWYhLZTos9J1vI0ZWyc2SMih3Giemggw7un5IsVJfzQKXQGc_LHRuCFcTj9qx87eY_v1dD-j9ZFmuDwJH7hqnkPdGKFJ5dLWH8yqlATycr-Hg6VneVoy_07fpLFLomtWuNxpJLjTsTmWev8hmLtwzDUIyY55Ik1TJkty7b4xuj4smVD7pWEE9)**
 - Download the document retrieval notebook from the module here: **[Document retrieval.ipynb](https://eventing.coursera.org/api/redirectStrict/_eqO9XZ27B170KFo6clxBJ4oi_yUvcMdqdekzCHFeafU_qeMrfxrQ60VWa0qrt-n4mfHhY2fzLK2sgG9Za7ynA.YZZBch-KNR48GrGoeaY5Kg.FiFl2enCXjdviicIHf89_Hzi99nT8sWn8DbvAf5onC4LPyTKlB8PpUYW-gLgT8JYHe9PeULpoA_OcjOEX14E3Y9ojALKbUIQ2D1_816EstaQn-ceebdzxnpqGo6Is07Hskmf-YpQTMhG4miRnyOH9e-6Fev842APTR7ruYgihl0S1PYvS2wDYKo8sxxGWGsVtTsVrS20O4ChC6L_-evQKu9pcWT0QeP6nLzQpaC7I41_UGgy_5pjbxaXu2ePbeooQ_R4chYpR65iDGp-nbY9tYwU_4KubldVY8C9rhqXU6n91OG4wjRzTxG9ViuFTmGtto2Z-d5VPGLww-yhJf0b0U94KEiKBEPqUBYRpRujfrmivgJWZwM-E2dvZ88V7H8mIaop5xwB46vN189WWiyhGncNgZyR29izgBa_fQlsQjnXT6qoAlDZEq8L_S6EvTcB28A6fNoFHHRKnBus5r5yuw)**
 - Save both of these files in the same directory (where you are calling iPython notebook from) and unzip the data file.
+
+
+# Results
+
+Nearest neighbors method is used. When using 'word_count' and 'tfidf' as features, the model results are different.
+
+Number of reviews based on products
+
+![alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Document_Retreval_TF_IDF/images/training_model.PNG "Document Retrieval")
+
+Closest neighbor of 'Elton John' while using raw word counts.
+
+![alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Document_Retreval_TF_IDF/images/elton.PNG "Document Retrieval")
+
+Closest neighbor of 'Elton John' using TF-IDF vectors.
+
+![alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Document_Retreval_TF_IDF/images/elton_tfidf.PNG "Document Retrieval")
