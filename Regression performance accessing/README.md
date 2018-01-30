@@ -6,4 +6,12 @@ Use a plotting tool (e.g. matplotlib) to visualize the same polynomial degree on
 Use a validation set to select a polynomial degree
 Assess the final fit using test data
 
+## Fitting with order 15:
+
+![alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Regression%20performance%20accessing/images/poly_order_15.png "Validation")
+
+## RSS of Validation set:
+
+![alt text](https://github.com/EvanWang2015/Data_Science/blob/master/Regression%20performance%20accessing/images/RSS_Validation_Set.png "Validation")
+
 
