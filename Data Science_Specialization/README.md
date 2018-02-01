@@ -2,7 +2,7 @@
 
 ## Standford Machine Learning 
 
-[embed](https://github.com/EvanWang2015/Data_Science/blob/master/Data%20Science_Specialization/Stanford_Machine%20Learning.pdf)[embed]
+[embed]https://github.com/EvanWang2015/Data_Science/blob/master/Data%20Science_Specialization/Stanford_Machine%20Learning.pdf[embed]
 
 ## Machine Learning_ University of Washington
 
