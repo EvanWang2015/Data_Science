@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="data-analysis-exercise">Data analysis exercise</h1>
+<p>The purpose of this exercise is to provide an example of how you organize, perform, and communicate your work. The exercise itself is not meant to be difficult or particularly time consuming. We value our time, and we value your time. Feel free to explain what you would do if you had more time. Please include all of the source code for your analysis in your report, and please describe all of the steps. We should be able to reproduce your analysis with little work using the content of your report.</p>
+<p>This exercise asks some questions about a collection of records that simulate personal information such as name, address, and phone number. The associated data file contains records in <a href="http://jsonlines.org/">JSON Lines</a> format with one JSON object per line. The records contain nested fields, and different records might contain different fields. The high level concept of this exercise is to picture this data set as a structured table. Because each JSON record is independent, some or all of the columns in this table can have missing values. Below, we refer to the names of the columns in this table as named fields.</p>
+<p>Please present your solution as a single report that includes code, descriptive text, and results. We encourage you to include explanations of your approach to each problem. Examples of acceptable formats are PDF or HTML files generated from <a href="http://rmarkdown.rstudio.com/">RMarkdown</a>, <a href="http://jupyter.org/">Juypter Notebooks</a>, or any another method you prefer.</p>
+<ol style="list-style-type: decimal">
+<li><p>Start by making a list of all of the nested named fields that appear in any record. Concatenate nested field names using a period '.' to defind named fields for nested records. Present the list in alphabetical order. For example, if our data file contained the following</p>
+<pre><code>{&quot;name&quot;: &quot;Jane Doe&quot;, &quot;address&quot;: {&quot;personal&quot;: {&quot;street&quot;: &quot;123 Main St.&quot;, &quot;city&quot;: &quot;Springfield&quot;}}}
+{&quot;name&quot;: &quot;John Doe&quot;, &quot;email&quot;: &quot;johndoe@example.com&quot;}
+{&quot;name&quot;: {&quot;first&quot;: &quot;Anne&quot;, &quot;last&quot;: &quot;Smyth&quot;}, &quot;phone&quot;: &quot;123-245-7890&quot;}</code></pre>
+<p>then the ordered list of fields would be</p>
+<pre><code>[&quot;address.personal.city&quot;, &quot;address.personal.street&quot;, &quot;email&quot;, &quot;name&quot;, &quot;name.first&quot;, &quot;name.last&quot;, &quot;phone&quot;]</code></pre>
+<p>Note that a top-level named field such as &quot;name&quot; could contain either text or a nested JSON object. Thus &quot;name&quot; and &quot;name.first&quot; could both exists as separate fields in your list.</p></li>
+<li><p>Answer the following questions for each field in your list from question 1.</p>
+<pre><code>- What percentage of the records contain the field?
+- What are the five most common values of the field?</code></pre>
+<p>In the example data above, the field &quot;address.personal.city&quot; occurs in 1 out of 3 records so the fraction of records containing that field is 1/3. The exact percentage is 100/3. For this exercise, please approximate numeric answers to a reasonable precision such as 33.3%. Note that the field &quot;name&quot; occurs in the first and second record but not in the third record where the fields &quot;name.first&quot; and &quot;name.last&quot; are present. Thus, the &quot;name&quot; field occurs in 2/3 or roughly 66.6% of the records in the example above.</p></li>
+<li><p>How many distinct first names appear in this data set? Explain your procedure for identifying distinct first names.</p></li>
+<li><p>How many distinct street names appear in this data set? Explain your procedure for identifying distinct <a href="https://en.wikipedia.org/wiki/Street_or_road_name">street names</a>.</p></li>
+<li><p>What are the 5 most common US area codes in the phone number field? Explain your approach to identify the US area codes in this data set.</p></li>
+</ol>
+</body>
+</html>
